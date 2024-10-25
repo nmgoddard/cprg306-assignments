@@ -29,8 +29,8 @@ export default function NewItem(){
         <div className="flex flex-col justify-center items-center m-10 px-10 py-6 bg-green-950 border-t-4 border-green-600 rounded-b-lg w-100">
             <h2 className="text-3xl text-green-200 mb-2">Current Quantity: {quantity}</h2>
             <div>
-                <button onClick ={decreaseQuantity} disabled={decreaseDisable} className={buttonStyle}>Remove 1</button>
-                <button onClick ={increaseQuantity} disabled={increaseDisable} className={buttonStyle}>Add 1</button>
+                <button onClick ={decreaseQuantity} disabled={decreaseDisable} className={buttonStyle}>-</button>
+                <button onClick ={increaseQuantity} disabled={increaseDisable} className={buttonStyle}>+</button>
             </div>
         </div>
     );
